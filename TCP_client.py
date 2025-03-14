@@ -1,26 +1,36 @@
 import socket
 import time
 
-HOST = '127.0.0.1' 
-PORT = 65432 # From the dynamic port range
+def main():
+    HOST = '127.0.0.1'  
+    PORT = 65432 # From the dynamic port range       
 
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as CLient_Socket:
-    CLient_Socket.connect((HOST, PORT))
-    total_time = 0
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    client_socket.connect((HOST, PORT))
 
-    with open("tcp_log.txt", "w") as log:
-        for x in range(100):
-            msg = f"Message {x + 1}".encode()
-            start = time.time()
-            CLient_Socket.sendall(msg)
-            response = CLient_Socket.recv(1024)
-            end_time = time.time()
-            rtt = end_time - start
-            total_time += rtt
+    num_messages = 100
+    latencies = []
+    tbs = 0 #total bytes sent
 
-            log.write(f"Sent: {msg.decode()} - RTT: {rtt:.6f} sec\n")
+    for i in range(1, num_messages + 1):
+        payload = ("X" * 1400).encode() #change here to simulate real life application msgs (1400 bytes approx each)
+        start = time.time()
+        client_socket.sendall(payload) 
+        tbs += len(payload)
+        data = client_socket.recv(2048) #same change as in udp
+        end = time.time()
+        rtt = end - start
+        latencies.append(rtt)
+        print(f"Message {i}: Sent 1400 bytes, Received {len(data)} bytes, RTT: {rtt:.6f} sec") #so as to not clutter logfile
 
-        throughput = 100 / total_time
-        latency = total_time / 100
-        log.write(f"\nTCP average latency: {latency:.6f} seconds | Throughput: {throughput:.6f} messages/sec\n")
-    print(f"TCP average latency: {latency:.6f} seconds | Throughput: {throughput:.6f} messages/sec")
+    client_socket.close()
+
+    avg_latency = sum(latencies) / len(latencies)
+    total = sum(latencies)
+    throughput = tbs / total if total > 0 else 0
+    print("\nTCP Test Summary:")
+    print(f"Average RTT: {avg_latency:.6f} sec")
+    print(f"Throughput: {throughput:.2f} bytes/sec")
+
+if __name__ == "__main__":
+    main()

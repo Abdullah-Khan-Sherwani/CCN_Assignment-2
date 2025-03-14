@@ -1,40 +1,34 @@
 import socket
-import random
+import time
 
-def main():
-    HOST = '127.0.0.1'
-    PORT = 65432 # From the dynamic port range       
+HOST = '127.0.0.1'  
+PORT = 65432  
 
-    # creating a tcp socket bound to address
-    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
     server_socket.bind((HOST, PORT))
-    server_socket.listen(1)
-    print(f"TCP server listening on {HOST}:{PORT}")
+    server_socket.listen()
+    print("TCP Server is listening on port", PORT)
 
-    #accept connection
-    conn, addr = server_socket.accept()
-    print("Connected by", addr)
+    while True:  # Keep accepting new clients
+        connection, address = server_socket.accept()
+        with connection:
+            print("Connected by", address)
 
-    while True:
-        data = conn.recv(1024)
-        if not data:
-            break 
-        message = data.decode()
-        print("Received:", message[0])
+            with open("tcp_log.txt", "w") as log:
+                while True:
+                    try:
+                        data = connection.recv(1024)  
+                        if not data:
+                            break  # Client disconnected
 
-        if random.random() < 0.05: # Random int generation to provide a fair test eith udp (else time discrepancy)
-            safeguard = 1 # no logic here, just to keep the code running
-            #print("Packet loss for message:", message)
-            #continue
+                        response = b"Received: " + data  # Acknowledge message
+                        connection.sendall(response)
 
-        response = "Received: " + message
-        conn.sendall(response.encode())
+                        #log.write(f"Received: {data.decode()}\n")
 
-    conn.close()
-    server_socket.close()
-
-if __name__ == "__main__":
-    main()
+                    except Exception as e:
+                        print("Error:", e)
+                        break  # Exit loop on error
 
 
 

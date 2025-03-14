@@ -1,33 +1,41 @@
 import socket
-import random
+import time
 
-def main():
-    HOST = '127.0.0.1'  
-    PORT = 65432 # From the dynamic port range
-    server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+HOST = '127.0.0.1'  # Local host
+PORT = 65432  # Dynamic port range
+
+# Create UDP socket
+with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as server_socket:
     server_socket.bind((HOST, PORT))
-    print(f"UDP server listening on {HOST}:{PORT}")
+    print("UDP Server is listening on port", PORT)
 
-    while True:
-        data, addr = server_socket.recvfrom(2048)
+    with open("udp_log.txt", "w") as log:
+        received_packets = 0
+        total_packets = 100  # Expected messages
 
-        if not data:
-            break
+        for _ in range(total_packets):  
+            try:
+                start = time.time()
+                data, address = server_socket.recvfrom(1024)  # Receive message
+                end = time.time()
 
-        message = data.decode()
-        print(f"Received from {addr}: {message[0]}")
+                if not data:
+                    continue
 
-        if random.random() < 0.05: # 5% chance of packet loss
-            print("Packet loss for message:", message)
-            continue
+                message = data.decode()
+                received_packets += 1
+                server_socket.sendto(b"ACK", address) # Send ACK to client for rtt compute
 
-        response = "Received: " + message
-        server_socket.sendto(response.encode(), addr)
+                log.write(f"Received: {message} - RTT: {end - start:.6f} sec\n")
+                print(f"Received from {address}: {message}")
 
-    server_socket.close()
+            except Exception as e:
+                print("Error receiving data:", e)
 
-if __name__ == "__main__":
-    main()
+        # Calculate packet loss percentage
+        packet_loss = ((total_packets - received_packets) / total_packets) * 100
+        log.write(f"\nPacket loss percentage: {packet_loss:.2f}%\n")
+        print(f"Packet loss percentage: {packet_loss:.2f}%")
 
 
 

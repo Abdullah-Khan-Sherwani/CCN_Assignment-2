@@ -1,0 +1,25 @@
+1. Latency Comparison:
+UDP has a lower latency on average when compared with TCP. This is because UDP does not have the overhead of establishing and 
+maintaining a connection, which can lead to higher latency. TCP on average has a latency of 0.000122 seconds and UDP had latency
+0.000106 seconds. In the code provided latency and throughput vary with tcp and udp both having minute differences in latency and 
+throughput. This is due to the nature of the network and the specific conditions of the test. However, in general, UDP tends to have 
+lower latency than TCP.
+
+2. Reliability and Packet Loss:
+Nothing happens when UDP packets are lost and they are not retransmitted.
+TCP ensures all packets arrive correctly since that is its design goal. It is used in applications which do not tolerate packet loss
+such as email delivery therefore it ensures all packets are delivered using different mechanisms such as checksums, ACKs, and 
+retransmission
+
+3. Throughput Analysis:
+UDP is faster for bulk data transfer since it is not hindered by retransmissions, and other overheads. Although UDP is faster, it is 
+less reliable than TCP and if the data is loss intolerant then TCP should be used instead of UDP.
+TCP introduces overhead due to acknowledgements (ACKs) since every packet requires an ACK to be received and if an ACK is not recieved,
+is corrupted, or is duplicated, or is lost, then TCP retranmits the packet which can lead to duplicate packets and cause congestion
+and increase overhead.
+
+4. Use Cases:
+TCP should be used when the data being transferred is loss intolerant and UDP should be used where fast transmission is requuired and
+data loss can be tolerated.
+TCP can be used in applications such as emails , file transfers, and web browsing. UDP can be used in applications such as
+ video streaming and online gaming.
