@@ -1,7 +1,7 @@
 1. Latency Comparison:
 UDP has a lower latency on average when compared with TCP. This is because UDP does not have the overhead of establishing and 
-maintaining a connection, which can lead to higher latency. TCP on average has a latency of 0.000122 seconds and UDP had latency
-0.000106 seconds. In the code provided latency and throughput vary with tcp and udp both having minute differences in latency and 
+maintaining a connection, which can lead to higher latency. TCP on average has a latency (RTT) of 0.000066 sec and UDP had latency
+0.000045 sec. In the code provided latency and throughput vary with tcp and udp both having minute differences in latency and 
 throughput. This is due to the nature of the network and the specific conditions of the test. However, in general, UDP tends to have 
 lower latency than TCP.
 

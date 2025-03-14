@@ -18,7 +18,7 @@ def main():
         print(f"Received from {addr}: {message[0]}")
 
         if random.random() < 0.05: # 5% chance of packet loss
-            print("Packet loss for message:", message)
+            print("Packet loss for message:", message[0])
             continue
 
         response = "Received: " + message

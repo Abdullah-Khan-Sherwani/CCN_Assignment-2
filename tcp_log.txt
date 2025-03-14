@@ -1,102 +1,104 @@
-Sent: Message 1 - RTT: 0.000000 sec
-Sent: Message 2 - RTT: 0.000000 sec
-Sent: Message 3 - RTT: 0.000000 sec
-Sent: Message 4 - RTT: 0.000000 sec
-Sent: Message 5 - RTT: 0.000000 sec
-Sent: Message 6 - RTT: 0.000000 sec
-Sent: Message 7 - RTT: 0.000000 sec
-Sent: Message 8 - RTT: 0.000000 sec
-Sent: Message 9 - RTT: 0.000000 sec
-Sent: Message 10 - RTT: 0.000000 sec
-Sent: Message 11 - RTT: 0.000000 sec
-Sent: Message 12 - RTT: 0.000000 sec
-Sent: Message 13 - RTT: 0.000000 sec
-Sent: Message 14 - RTT: 0.000000 sec
-Sent: Message 15 - RTT: 0.000000 sec
-Sent: Message 16 - RTT: 0.000000 sec
-Sent: Message 17 - RTT: 0.000000 sec
-Sent: Message 18 - RTT: 0.000000 sec
-Sent: Message 19 - RTT: 0.000000 sec
-Sent: Message 20 - RTT: 0.000000 sec
-Sent: Message 21 - RTT: 0.000000 sec
-Sent: Message 22 - RTT: 0.000000 sec
-Sent: Message 23 - RTT: 0.000000 sec
-Sent: Message 24 - RTT: 0.000000 sec
-Sent: Message 25 - RTT: 0.000000 sec
-Sent: Message 26 - RTT: 0.000000 sec
-Sent: Message 27 - RTT: 0.000000 sec
-Sent: Message 28 - RTT: 0.000000 sec
-Sent: Message 29 - RTT: 0.000000 sec
-Sent: Message 30 - RTT: 0.000000 sec
-Sent: Message 31 - RTT: 0.000000 sec
-Sent: Message 32 - RTT: 0.004129 sec
-Sent: Message 33 - RTT: 0.000000 sec
-Sent: Message 34 - RTT: 0.000000 sec
-Sent: Message 35 - RTT: 0.000000 sec
-Sent: Message 36 - RTT: 0.000000 sec
-Sent: Message 37 - RTT: 0.000000 sec
-Sent: Message 38 - RTT: 0.000000 sec
-Sent: Message 39 - RTT: 0.000000 sec
-Sent: Message 40 - RTT: 0.000000 sec
-Sent: Message 41 - RTT: 0.000000 sec
-Sent: Message 42 - RTT: 0.000000 sec
-Sent: Message 43 - RTT: 0.000000 sec
-Sent: Message 44 - RTT: 0.000000 sec
-Sent: Message 45 - RTT: 0.000000 sec
-Sent: Message 46 - RTT: 0.000000 sec
-Sent: Message 47 - RTT: 0.000000 sec
-Sent: Message 48 - RTT: 0.000000 sec
-Sent: Message 49 - RTT: 0.000000 sec
-Sent: Message 50 - RTT: 0.000000 sec
-Sent: Message 51 - RTT: 0.000000 sec
-Sent: Message 52 - RTT: 0.000000 sec
-Sent: Message 53 - RTT: 0.000000 sec
-Sent: Message 54 - RTT: 0.000000 sec
-Sent: Message 55 - RTT: 0.000000 sec
-Sent: Message 56 - RTT: 0.000000 sec
-Sent: Message 57 - RTT: 0.000000 sec
-Sent: Message 58 - RTT: 0.000000 sec
-Sent: Message 59 - RTT: 0.000000 sec
-Sent: Message 60 - RTT: 0.000000 sec
-Sent: Message 61 - RTT: 0.000000 sec
-Sent: Message 62 - RTT: 0.000000 sec
-Sent: Message 63 - RTT: 0.000000 sec
-Sent: Message 64 - RTT: 0.000000 sec
-Sent: Message 65 - RTT: 0.000000 sec
-Sent: Message 66 - RTT: 0.000000 sec
-Sent: Message 67 - RTT: 0.000000 sec
-Sent: Message 68 - RTT: 0.000000 sec
-Sent: Message 69 - RTT: 0.000000 sec
-Sent: Message 70 - RTT: 0.000000 sec
-Sent: Message 71 - RTT: 0.000000 sec
-Sent: Message 72 - RTT: 0.000000 sec
-Sent: Message 73 - RTT: 0.000000 sec
-Sent: Message 74 - RTT: 0.000000 sec
-Sent: Message 75 - RTT: 0.000000 sec
-Sent: Message 76 - RTT: 0.000000 sec
-Sent: Message 77 - RTT: 0.000000 sec
-Sent: Message 78 - RTT: 0.007045 sec
-Sent: Message 79 - RTT: 0.000000 sec
-Sent: Message 80 - RTT: 0.000000 sec
-Sent: Message 81 - RTT: 0.000000 sec
-Sent: Message 82 - RTT: 0.000000 sec
-Sent: Message 83 - RTT: 0.000000 sec
-Sent: Message 84 - RTT: 0.000000 sec
-Sent: Message 85 - RTT: 0.001026 sec
-Sent: Message 86 - RTT: 0.000000 sec
-Sent: Message 87 - RTT: 0.000000 sec
-Sent: Message 88 - RTT: 0.000000 sec
-Sent: Message 89 - RTT: 0.000000 sec
-Sent: Message 90 - RTT: 0.000000 sec
-Sent: Message 91 - RTT: 0.000000 sec
-Sent: Message 92 - RTT: 0.000000 sec
-Sent: Message 93 - RTT: 0.000000 sec
-Sent: Message 94 - RTT: 0.000000 sec
-Sent: Message 95 - RTT: 0.000000 sec
-Sent: Message 96 - RTT: 0.000000 sec
-Sent: Message 97 - RTT: 0.000000 sec
-Sent: Message 98 - RTT: 0.000000 sec
-Sent: Message 99 - RTT: 0.000000 sec
-Sent: Message 100 - RTT: 0.000000 sec
+Message 1: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 2: Sent 1400 bytes, Received 386 bytes, RTT: 0.000000 sec
+Message 3: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 4: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 5: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 6: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 7: Sent 1400 bytes, Received 1420 bytes, RTT: 0.002011 sec
+Message 8: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 9: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 10: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 11: Sent 1400 bytes, Received 1034 bytes, RTT: 0.001014 sec
+Message 12: Sent 1400 bytes, Received 1806 bytes, RTT: 0.000000 sec
+Message 13: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 14: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 15: Sent 1400 bytes, Received 1806 bytes, RTT: 0.000000 sec
+Message 16: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 17: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 18: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 19: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 20: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 21: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 22: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 23: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 24: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 25: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 26: Sent 1400 bytes, Received 1806 bytes, RTT: 0.000000 sec
+Message 27: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 28: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 29: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 30: Sent 1400 bytes, Received 1796 bytes, RTT: 0.000000 sec
+Message 31: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 32: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 33: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 34: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 35: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 36: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 37: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 38: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 39: Sent 1400 bytes, Received 1420 bytes, RTT: 0.002795 sec
+Message 40: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 41: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 42: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 43: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 44: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 45: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 46: Sent 1400 bytes, Received 2048 bytes, RTT: 0.000000 sec
+Message 47: Sent 1400 bytes, Received 2048 bytes, RTT: 0.000000 sec
+Message 48: Sent 1400 bytes, Received 1292 bytes, RTT: 0.000000 sec
+Message 49: Sent 1400 bytes, Received 1806 bytes, RTT: 0.000000 sec
+Message 50: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 51: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000743 sec
+Message 52: Sent 1400 bytes, Received 2048 bytes, RTT: 0.000000 sec
+Message 53: Sent 1400 bytes, Received 1168 bytes, RTT: 0.000000 sec
+Message 54: Sent 1400 bytes, Received 1806 bytes, RTT: 0.000000 sec
+Message 55: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 56: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 57: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 58: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 59: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 60: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 61: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 62: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 63: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 64: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 65: Sent 1400 bytes, Received 1806 bytes, RTT: 0.000000 sec
+Message 66: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 67: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 68: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 69: Sent 1400 bytes, Received 1806 bytes, RTT: 0.000000 sec
+Message 70: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 71: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 72: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 73: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 74: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 75: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 76: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 77: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 78: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 79: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 80: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 81: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 82: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 83: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 84: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 85: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 86: Sent 1400 bytes, Received 386 bytes, RTT: 0.000000 sec
+Message 87: Sent 1400 bytes, Received 2048 bytes, RTT: 0.000000 sec
+Message 88: Sent 1400 bytes, Received 2048 bytes, RTT: 0.000000 sec
+Message 89: Sent 1400 bytes, Received 1574 bytes, RTT: 0.000000 sec
+Message 90: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 91: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 92: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 93: Sent 1400 bytes, Received 2048 bytes, RTT: 0.000000 sec
+Message 94: Sent 1400 bytes, Received 792 bytes, RTT: 0.000000 sec
+Message 95: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 96: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 97: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 98: Sent 1400 bytes, Received 1420 bytes, RTT: 0.000000 sec
+Message 99: Sent 1400 bytes, Received 1034 bytes, RTT: 0.000000 sec
+Message 100: Sent 1400 bytes, Received 1796 bytes, RTT: 0.000000 sec
 
-TCP average latency: 0.000122 seconds | Throughput: 8196.963005 messages/sec
+TCP Test Summary:
+Average RTT: 0.000066 sec
+Throughput: 21331876.34 bytes/sec
