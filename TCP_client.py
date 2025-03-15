@@ -13,8 +13,9 @@ def main():
     tbs = 0 #total bytes sent
 
     with open("tcp_log.txt", "w") as log_file:
+        #test_start = time.time()
         for i in range(1, num_messages + 1):
-            payload = ("X" * 1400).encode() #change here to simulate real life application msgs (1400 bytes approx each)
+            payload = ("X" * 1400).encode() #change here to 1400 bytes
             start = time.time()
             client_socket.sendall(payload) 
             tbs += len(payload)
@@ -25,11 +26,15 @@ def main():
             log_file.write(f"Message {i}: Sent 1400 bytes, Received {len(data)} bytes, RTT: {rtt:.6f} sec\n")
             print(f"Message {i}: Sent 1400 bytes, Received {len(data)} bytes, RTT: {rtt:.6f} sec") #so as to not clutter logfile
 
+        #test_end = time.time()
         client_socket.close()
 
         avg_latency = sum(latencies) / len(latencies)
         total = sum(latencies)
-        throughput = tbs / total if total > 0 else 0
+        #test_duration = test_end - test_start  # Total time taken for the test
+        #throughput = tbs / test_duration if test_duration > 0 else 0
+        throughput = tbs / total if total > 0 else 0 # for a fair test with udp throughput is calculated using total rtt's else program differences create unfair discrepancies 
+
         log_file.write("\nTCP Test Summary:\n")
         log_file.write(f"Average RTT: {avg_latency:.6f} sec\n")
         log_file.write(f"Throughput: {throughput:.2f} bytes/sec\n")

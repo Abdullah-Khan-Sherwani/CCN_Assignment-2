@@ -14,6 +14,7 @@ def main():
     lpackets = 0 # lost
 
     with open("udp_log.txt", "w") as log:
+        #test_start = time.time()
         for i in range(1, num_msg + 1):
             payload = ("X" * 1400).encode() #1400 bytes transferred
             totalBytes += len(payload)
@@ -31,6 +32,7 @@ def main():
                 log.write(f"Message {i}: Sent 1400 bytes, No response (packet lost)\n")
                 print(f"Message {i}: Sent 1400 bytes, No response (packet lost)")
 
+        #test_end = time.time()
         client_socket.close()
 
         if latencies:
@@ -40,6 +42,8 @@ def main():
             avg_latency = 0
             total= 0
 
+        #test_duration = test_end - test_start  # Total time taken for the test
+        #throughput = totalBytes / test_duration if test_duration > 0 else 0
         throughput = totalBytes / total if total > 0 else 0
 
         log.write("\nUDP Test Summary:\n")
